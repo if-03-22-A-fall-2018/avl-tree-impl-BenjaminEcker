@@ -11,6 +11,13 @@
 Node rotate_left(Node node);
 
 /**
+ * Right rotates the subtree rooted with the given node
+ * @param node The root of the subtree
+ * @return The new root of the subtree
+ */
+ Node rotate_right(Node node);
+
+/**
  * Inserts a new node (with the given key) in the subtree rooted with the given node
  * @param node The root of the subtree
  * @param key The key of the new node
@@ -19,4 +26,11 @@ Node rotate_left(Node node);
  */
 Node insert(Node node, int key);
 
+int get_balance(Node node);
+
+//void print_postorder(Node node);
+
+Node unbalanced_insert(Node root, int key);
+
+int max(int n1, int n2);
 #endif //BALANCEDTREE_AVL_TREE_H
